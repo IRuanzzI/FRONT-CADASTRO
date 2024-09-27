@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        
+        <form class="formLogin" id="formLogin">
+            <h1>Login</h1>
+            <label for="email">Email</label>
+            <input type="email" placeholder="email" id="email" autocomplete="off" required>
+
+            <label for="password">Senha</label>
+            <input type="password" placeholder="senha" id="password" autocomplete="off" required>
+
+            <button type="submit">Entrar</button>
+
+            <p>Não tem uma conta? <a href="#" id="registerLink">Crie uma agora</a></p>
+        </form>
+
+        <form class="formCadastro" id="formCadastro" style="display: none;">
+            <h1>Crie sua conta</h1>
+
+            <label for="name">Nome</label>
+            <input type="text" placeholder="Nome" id="name" autocomplete="off" required>
+
+            <label for="emailRegister">Email</label> 
+            <input type="email" placeholder="Email" id="emailRegister" autocomplete="off" required> 
+
+            <label for="passwordRegister">Senha</label> 
+            <input type="password" placeholder="Senha" id="passwordRegister" autocomplete="off" required> 
+
+            <button type="submit">Criar</button>
+
+            <p>Já tem uma conta? <a href="#" id="loginLink">Entre aqui.</a></p>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
